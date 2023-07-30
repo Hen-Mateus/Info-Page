@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="description"
+        content="Página web sobre o Henrique Mateus , com uma secção de Quem Sou que fala sobre o mesmo, uma secção de contacto onde se pode enviar uma mensagem ao Henrique com o nome e e-mail do remetente e uma última secção que contém os links favoritos do Henrique.">
+    <meta name="keywords" content="henrique mateus, homepage, quem sou, contacte-me, links favoritos">
+    <meta name="author" content="Henrique Mateus">
+    <title>Ficha 7 - Henrique Mateus</title>
+</head>
+
+<body class="body-area">
+    <header class="header-area">
+        <div>
+            <h1>Henrique Mateus</h1>
+            <h3>homepage</h3>
+        </div>
+        <nav class="navbar-area">
+            <ul>
+                <li><a href="#quemsou">Quem sou</a></li>
+                <li><a href="#contact">Contacte-me</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-area">
+        <section class="quem-sou" id="quemsou">
+            <div>
+                <h2>Quem sou</h2>
+                <p><strong>Nome:</strong> Henrique Mateus</p>
+                <p><strong>Idade:</strong> 22 anos</p>
+                <p><strong>Actividade:</strong> Estudante</p>
+                <p><strong>Onde vivo:</strong> Benedita</p>
+            </div>
+            <figure><img src="image/foto.jpeg"
+                    alt="Fotografia tipo passe do Henrique Mateus com uma t-shirt branca, uma camisa aos quadrados preta e bege e com um céu azul de fundo">
+            </figure>
+        </section>
+        <hr class="line">
+        <section class="contact" id="contact">
+            <h2>Contacte-me</h2>
+            <form action="ficha7.html">
+                <fieldset>
+                    <legend>A sua mensagem</legend>
+                    <label for="nome">Nome:</label>
+                    <input class="input_name" type="text" id="nome" name="nome" size="40" pattern="[A-Z\sa-z]*"
+                        title="Apenas é permitido texto.">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input class="input_email" type="email" id="email" name="email" size="40"
+                        pattern="([\w\.]+)@([\w\.]+)\.(\w+)" title="Introduza um e-mail válido.">
+                    <br>
+                    <label class="label-alinhamento" for="mensagem">Mensagem:</label>
+                    <textarea class="textarea" id="mensagem" name="mensagem"></textarea>
+                    <input class="enviar" type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </section>
+        <hr class="line">
+        <section class="fav-links" id="links">
+            <h2>Os meus links favoritos</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                <li><a href="https://www.twitch.tv/" target="_blank">Twitch</a></li>
+                <li><a href="https://www.pcdiga.com/" target="_blank">PCDIGA</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer-area">
+        <ul>
+            <li><a href="#quemsou">Quem sou</a></li>
+            <li><a href="#contact">Contacte-me</a></li>
+            <li><a href="#links">Links</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
